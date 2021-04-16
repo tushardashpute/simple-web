@@ -1,0 +1,19 @@
+{
+	"family": "ecs-fargate-task",
+	"containerDefinitions": [{
+		"environment": [],
+		"name": "ecs-fargate-container",
+		"mountPoints": [],
+		"essential": true,
+		"image": "508701674840.dkr.ecr.us-east-1.amazonaws.com/ecs-fargate:2",
+		"dockerLabels": {
+			"name": "ecs-docker"
+		},
+		"memory": 512,
+		"portMappings": [{
+			"hostPort": 80,
+			"protocol": "tcp",
+			"containerPort": 80
+		}]
+	}]
+}
